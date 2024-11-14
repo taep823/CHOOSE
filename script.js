@@ -5,10 +5,10 @@ let headButton = document.querySelector('.head-button');
 
 // html content elements
 let text = document.querySelector('.text');
-let pizza = document.querySelector('h2');
+let run = document.querySelector('h2');
 
 // html images elements
-let start = document.querySelector('.startSubway');
+let start = document.querySelector('.abdhospital');
     
 let choiceAimage = document.querySelector('.choiceAimage');
     choiceAimage.style.display ="none";
@@ -18,7 +18,7 @@ let choiceA2image = document.querySelector('.choiceA2image');
     choiceA2image.style.display ="none";
 
 headButton.addEventListener('click', function() {
-text.innerHTML = "The tracks lead you deeper into the subway tunnels. You encounter a scavenger who is hostile. Double click picture to fight OR seach the page for supplies ";
+text.innerHTML = "You find one of your friends unconscious on the operating bed. You can double click to go check on them, or search the page to run away.";
 start.style.display = "none";
 choiceAimage.style.display ="block";
 exploreButton.style.display="none";

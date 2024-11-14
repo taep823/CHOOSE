@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 
 
-body{ background-image: url("tile.jpg");
+body{ background-image: url("sky.png");
     background-repeat: repeat-y;
     background-repeat: repeat-x;
     font-family: "Carrois Gothic", sans-serif;
@@ -9,12 +9,12 @@ body{ background-image: url("tile.jpg");
     font-style: normal;}
 
 .main{width:300px;margin:0 auto;
-background:#959595ff; padding:15px;}
+background:orange; padding:15px;}
 img{width:300px;
 }
 p{
 color:#262626;
-background: #959595ff;
+background: white;
 padding:5px;
 font-size: .8em;}
 
