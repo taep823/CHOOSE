@@ -16,6 +16,11 @@ let choiceA1image = document.querySelector('.choiceA1image');
     choiceA1image.style.display ="none";
 let choiceA2image = document.querySelector('.choiceA2image');
     choiceA2image.style.display ="none";
+let h2 = document.querySelector('.run');
+run.style.display="none";
+
+let knife=document.querySelector('.knife');
+knife.display="none";
 
 headButton.addEventListener('click', function() {
 text.innerHTML = "You find one of your friends unconscious on the operating bed. You can double click to go check on them, or search the page to run away.";
@@ -23,17 +28,19 @@ start.style.display = "none";
 choiceAimage.style.display ="block";
 exploreButton.style.display="none";
 headButton.style.display="none";
+run.style.display="block";
 });
 
 choiceAimage.addEventListener('dblclick', function(){
     choiceAimage.style.display ="none";
-    text.innerHTML = "You knock them out. You are safe for now"
+    text.innerHTML = "They jump up and knock you out."
     choiceA1image.style.display ="block";
+    run.style.display="none";
 });
 
-pizza.addEventListener("mouseenter", function(){
+run.addEventListener("mouseenter", function(){
     choiceAimage.style.display ="none";
-    text.innerHTML = "You found supplies. You make it another day"
+    text.innerHTML = "You run and find the exit and live another day"
     choiceA2image.style.display ="block";
 });
 
@@ -42,6 +49,8 @@ pizza.addEventListener("mouseenter", function(){
 
 exploreButton.addEventListener("click", function(){
     
-    text.innerHTML = "SORRY THIS CHOICE IS STILL UNDER CONSTRUCTION"
-   
+    text.innerHTML = "There’s a man down the hallway with a knife"
+    start.style.display = "none";
+    exploreButton.style.display="none";
+    headButton.style.display="none";
 });
